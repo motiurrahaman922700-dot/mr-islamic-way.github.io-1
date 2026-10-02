@@ -3,74 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M.R Islamic Way</title>
-<link rel="stylesheet" href="style.css">
+<title>ইলিয়াস ক্লথ স্টোর্স | কাপড়ের দোকান</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#faf7f2;color:#222;line-height:1.6}
+header{background:#111;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:700;color:#f5c542}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{padding:75px 6%;text-align:center;background:linear-gradient(135deg,#24140d,#6b3b20);color:white}
+.hero h1{font-size:42px;margin-bottom:12px}.hero p{font-size:19px}
+.btn{display:inline-block;margin:22px 7px 0;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold}
+.call{background:#f5c542;color:#111}.wa{background:#25d366;color:#fff}
+section{padding:55px 6%;max-width:1100px;margin:auto}
+h2{text-align:center;font-size:30px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:white;padding:25px;text-align:center;border-radius:16px;box-shadow:0 4px 16px #0001}
+.card .icon{font-size:45px;margin-bottom:10px}
+.info{background:#fff;border-radius:18px;padding:28px;box-shadow:0 4px 16px #0001}
+footer{background:#111;color:#ddd;text-align:center;padding:25px}
+@media(max-width:650px){nav{display:none}.hero h1{font-size:32px}}
+</style>
 </head>
 <body>
 <header>
-  <a class="brand" href="#home">🌙 <span>M.R Islamic Way</span></a>
-  <button class="menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
-  <nav>
-    <a href="#home">Home</a><a href="#books">Books / PDF</a><a href="#videos">Videos</a>
-    <a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#login">Login</a>
-  </nav>
+  <div class="logo">ইলিয়াস ক্লথ স্টোর্স</div>
+  <nav><a href="#home">হোম</a><a href="#products">কালেকশন</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></nav>
 </header>
 
-<section id="home" class="hero">
-  <div>
-    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
-    <h1>M.R Islamic Way</h1>
-    <p>ইসলামী জ্ঞান, কিতাব, উপকারী ছবি ও ভিডিও—একটি সহজ প্ল্যাটফর্মে।</p>
-    <div><a class="btn" href="#gallery">ছবি দেখুন</a><a class="btn light" href="#videos">ভিডিও দেখুন</a></div>
+<section class="hero" id="home">
+  <h1>ইলিয়াস ক্লথ স্টোর্স</h1>
+  <p>আপনার পছন্দের পোশাকের বিশ্বস্ত ঠিকানা</p>
+  <p>শার্ট • প্যান্ট • টি-শার্ট • পাঞ্জাবি • শাড়ি • ওড়না</p>
+  <a class="btn call" href="tel:7550924942">📞 কল করুন</a>
+  <a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp</a>
+</section>
+
+<section id="products">
+  <h2>আমাদের কালেকশন</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">👔</div><h3>শার্ট</h3><p>বিভিন্ন ডিজাইন ও কালেকশন</p></div>
+    <div class="card"><div class="icon">👖</div><h3>প্যান্ট</h3><p>বিভিন্ন ধরনের প্যান্ট</p></div>
+    <div class="card"><div class="icon">👕</div><h3>টি-শার্ট</h3><p>আকর্ষণীয় ডিজাইন</p></div>
+    <div class="card"><div class="icon">🕌</div><h3>পাঞ্জাবি</h3><p>বিভিন্ন উপলক্ষের জন্য</p></div>
+    <div class="card"><div class="icon">🥻</div><h3>শাড়ি</h3><p>বিভিন্ন রঙ ও ডিজাইন</p></div>
+    <div class="card"><div class="icon">🧣</div><h3>ওড়না</h3><p>বিভিন্ন ধরনের ওড়না</p></div>
   </div>
 </section>
 
-<section class="search"><div class="wrap">
-<h2>🔎 Islamic Content Search</h2>
-<input id="q" oninput="search()" placeholder="বই, বিষয়, ছবি বা ভিডিও খুঁজুন...">
-<p id="count"></p>
-</div></section>
+<section id="about">
+  <h2>আমাদের সম্পর্কে</h2>
+  <div class="info">
+    <p>ইলিয়াস ক্লথ স্টোর্সে বিভিন্ন ধরনের পোশাক ও কাপড়ের কালেকশন পাওয়া যায়। আপনার পছন্দ ও প্রয়োজন অনুযায়ী পোশাক বেছে নিতে আমাদের দোকানে আসুন।</p>
+  </div>
+</section>
 
-<section id="books" class="section"><div class="wrap">
-<h2>📚 Books / PDF</h2>
-<div class="notice">📚 এখানে ইসলামী ও আরবি শিক্ষার PDF কিতাব দেওয়া হয়েছে। বই খুলতে নিচের <b>Read PDF</b> বাটনে চাপ দিন।</div>
-<div class="cards">
-<article class="card searchable"><div class="book-icon">📖</div><h3>হেদায়াতুন নাহু (বাংলা)</h3><p>আরবি নাহু শেখার বাংলা সহায়ক কিতাব।</p><a class="btn" href="hedayatun-nahu-bangla.pdf" target="_blank" rel="noopener">Read PDF</a></article>
-<article class="card searchable"><div class="book-icon">📘</div><h3>আধুনিক আরবি ব্যাকরণ</h3><p>আরবি ব্যাকরণ শেখার শিক্ষামূলক PDF।</p><a class="btn" href="adhunik-arbi-bakaron.pdf" target="_blank" rel="noopener">Read PDF</a></article>
-</div>
-</div></section>
+<section id="contact">
+  <h2>যোগাযোগ করুন</h2>
+  <div class="info">
+    <p><strong>📍 ঠিকানা:</strong> ধানগাড়া বিষণপুর (সাকিম মোড়), চাঁচল, মালদা</p>
+    <p><strong>📞 মোবাইল:</strong> <a href="tel:7550924942">7550924942</a> / <a href="tel:9647639115">9647639115</a></p>
+    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/917550924942" target="_blank">7550924942</a> / <a href="https://wa.me/919647639115" target="_blank">9647639115</a></p>
+    <a class="btn call" href="tel:7550924942">📞 7550924942</a>
+    <a class="btn call" href="tel:9647639115">📞 9647639115</a>
+    <a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp 1</a>
+    <a class="btn wa" href="https://wa.me/919647639115" target="_blank">💬 WhatsApp 2</a>
+  </div>
+</section>
 
-<section id="videos" class="section alt"><div class="wrap">
-<h2>🎥 Islamic Videos</h2>
-<div class="cards">
-<article class="card searchable"><div class="video">▶</div><h3>Islamic Reminder</h3><p>YouTube video link পরে এখানে যোগ করা যাবে।</p></article>
-<article class="card searchable"><div class="video">▶</div><h3>Qur'an / Hadith Lesson</h3><p>তোমার ভিডিওগুলো এখানে সাজানো যাবে।</p></article>
-<article class="card searchable"><div class="video">▶</div><h3>Islamic Lecture</h3><p>ভিডিওর thumbnail ও title যোগ করা যাবে।</p></article>
-</div></div></section>
-
-<section id="gallery" class="section"><div class="wrap">
-<h2>🖼️ Islamic Gallery</h2>
-<div class="gallery">
-<figure class="searchable"><img src="images/dress-guide.png"><figcaption>পুরুষের পোশাক ও সতর সম্পর্কে চার মাযহাবের সংক্ষিপ্ত তথ্য</figcaption></figure>
-<figure class="searchable"><img src="images/dress-guide-urdu.png"><figcaption>مرد کے لباس کے احکام — تعلیمی چارٹ</figcaption></figure>
-<figure class="searchable"><img src="images/namaz-reminder.jpg"><figcaption>নামাজের গুরুত্ব — Reminder</figcaption></figure>
-</div></div></section>
-
-<section id="about" class="section about"><div class="wrap grid">
-<div><p class="label">ABOUT</p><h2>M.R Islamic Way</h2></div>
-<div><p>এই website-এ উপকারী ইসলামী কিতাব, PDF, ছবি, ভিডিও এবং শিক্ষামূলক content সুন্দরভাবে সংরক্ষণ ও প্রদর্শন করা হবে।</p><p class="arabic">وَقُلْ رَبِّ زِدْنِي عِلْمًا</p><p>“হে আমার রব, আমার জ্ঞান বৃদ্ধি করুন।” — সূরা ত্ব-হা ২০:১১৪</p></div>
-</div></section>
-
-<section id="contact" class="section"><div class="wrap narrow">
-<h2>📞 Contact</h2><form onsubmit="event.preventDefault();document.getElementById('msg').textContent='Message form demo হিসেবে কাজ করছে। Backend যোগ করলে সত্যিকারের message receive করা যাবে.'">
-<input required placeholder="আপনার নাম"><input required type="email" placeholder="Email"><textarea required placeholder="আপনার Message"></textarea><button class="btn">Send Message</button><p id="msg"></p>
-</form></div></section>
-
-<section id="login" class="section alt"><div class="wrap narrow">
-<h2>🔐 Login</h2><form onsubmit="event.preventDefault();document.getElementById('loginmsg').textContent='এটি এখন demo login. Secure backend/database পরে যোগ করতে হবে.'">
-<input required type="email" placeholder="Email"><input required type="password" placeholder="Password"><button class="btn">Login</button><p id="loginmsg"></p>
-</form></div></section>
-
-<footer><div class="wrap"><b>🌙 M.R Islamic Way</b><p>Beneficial Islamic knowledge.</p><small>© <span id="year"></span> M.R Islamic Way</small></div></footer>
-<script src="script.js"></script>
-</body></html>
+<footer>
+  © 2026 ইলিয়াস ক্লথ স্টোর্স — সর্বস্বত্ব সংরক্ষিত
+</footer>
+</body>
+</html>
