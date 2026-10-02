@@ -7,71 +7,90 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#faf7f2;color:#222;line-height:1.6}
-header{background:#111;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:24px;font-weight:700;color:#f5c542}
-nav a{color:#fff;text-decoration:none;margin-left:18px}
-.hero{padding:75px 6%;text-align:center;background:linear-gradient(135deg,#24140d,#6b3b20);color:white}
-.hero h1{font-size:42px;margin-bottom:12px}.hero p{font-size:19px}
-.btn{display:inline-block;margin:22px 7px 0;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold}
-.call{background:#f5c542;color:#111}.wa{background:#25d366;color:#fff}
-section{padding:55px 6%;max-width:1100px;margin:auto}
+header{background:#111;color:#fff;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:700;color:#f5c542}
+nav a{color:#fff;text-decoration:none;margin-left:15px;font-size:14px}
+.hero{padding:72px 6%;text-align:center;background:linear-gradient(135deg,#24140d,#6b3b20);color:#fff}
+.hero h1{font-size:42px;margin-bottom:10px} .hero p{font-size:18px}
+.btn,.order{display:inline-block;text-decoration:none;font-weight:bold;border-radius:30px}
+.btn{margin:20px 6px 0;padding:12px 22px} .call{background:#f5c542;color:#111} .wa{background:#25d366;color:#fff}
+section{padding:52px 6%;max-width:1150px;margin:auto}
 h2{text-align:center;font-size:30px;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
-.card{background:white;padding:25px;text-align:center;border-radius:16px;box-shadow:0 4px 16px #0001}
-.card .icon{font-size:45px;margin-bottom:10px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.product{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #0002}
+.product img{width:100%;height:230px;object-fit:cover;display:block}
+.product-body{padding:18px;text-align:center} .product-body h3{font-size:22px}
+.order{margin-top:12px;padding:10px 16px;background:#25d366;color:#fff}
 .info{background:#fff;border-radius:18px;padding:28px;box-shadow:0 4px 16px #0001}
 footer{background:#111;color:#ddd;text-align:center;padding:25px}
-@media(max-width:650px){nav{display:none}.hero h1{font-size:32px}}
+@media(max-width:650px){nav{display:none}.hero h1{font-size:32px}.product img{height:210px}}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">ইলিয়াস ক্লথ স্টোর্স</div>
-  <nav><a href="#home">হোম</a><a href="#products">কালেকশন</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></nav>
+<div class="logo">ইলিয়াস ক্লথ স্টোর্স</div>
+<nav><a href="#home">হোম</a><a href="#products">কালেকশন</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></nav>
 </header>
 
 <section class="hero" id="home">
-  <h1>ইলিয়াস ক্লথ স্টোর্স</h1>
-  <p>আপনার পছন্দের পোশাকের বিশ্বস্ত ঠিকানা</p>
-  <p>শার্ট • প্যান্ট • টি-শার্ট • পাঞ্জাবি • শাড়ি • ওড়না</p>
-  <a class="btn call" href="tel:7550924942">📞 কল করুন</a>
-  <a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp</a>
+<h1>ইলিয়াস ক্লথ স্টোর্স</h1>
+<p>আপনার পছন্দের পোশাক ও কাপড়ের বিশ্বস্ত ঠিকানা</p>
+<p>শার্ট • প্যান্ট • টি-শার্ট • পাঞ্জাবি • শাড়ি • ওড়না • শিশুদের পোশাক</p>
+<a class="btn call" href="tel:7550924942">📞 কল করুন</a>
+<a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp</a>
 </section>
 
 <section id="products">
-  <h2>আমাদের কালেকশন</h2>
-  <div class="grid">
-    <div class="card"><div class="icon">👔</div><h3>শার্ট</h3><p>বিভিন্ন ডিজাইন ও কালেকশন</p></div>
-    <div class="card"><div class="icon">👖</div><h3>প্যান্ট</h3><p>বিভিন্ন ধরনের প্যান্ট</p></div>
-    <div class="card"><div class="icon">👕</div><h3>টি-শার্ট</h3><p>আকর্ষণীয় ডিজাইন</p></div>
-    <div class="card"><div class="icon">🕌</div><h3>পাঞ্জাবি</h3><p>বিভিন্ন উপলক্ষের জন্য</p></div>
-    <div class="card"><div class="icon">🥻</div><h3>শাড়ি</h3><p>বিভিন্ন রঙ ও ডিজাইন</p></div>
-    <div class="card"><div class="icon">🧣</div><h3>ওড়না</h3><p>বিভিন্ন ধরনের ওড়না</p></div>
-  </div>
+<h2>আমাদের কালেকশন</h2>
+<div class="products"><article class="product">
+      <img src="images/product1.jpg" alt="লুঙ্গি ও চেক কাপড়">
+      <div class="product-body"><h3>লুঙ্গি ও চেক কাপড়</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20লুঙ্গি ও চেক কাপড়%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article>
+<article class="product">
+      <img src="images/product2.jpg" alt="শিশুদের পোশাক">
+      <div class="product-body"><h3>শিশুদের পোশাক</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20শিশুদের পোশাক%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article>
+<article class="product">
+      <img src="images/product3.jpg" alt="ওড়না">
+      <div class="product-body"><h3>ওড়না</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20ওড়না%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article>
+<article class="product">
+      <img src="images/product4.jpg" alt="শিশুদের ড্রেস">
+      <div class="product-body"><h3>শিশুদের ড্রেস</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20শিশুদের ড্রেস%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article>
+<article class="product">
+      <img src="images/product5.jpg" alt="শাড়ি">
+      <div class="product-body"><h3>শাড়ি</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20শাড়ি%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article>
+<article class="product">
+      <img src="images/product6.jpg" alt="বিভিন্ন কাপড়">
+      <div class="product-body"><h3>বিভিন্ন কাপড়</h3><p>ইলিয়াস ক্লথ স্টোর্সে পাওয়া যায়</p>
+      <a class="order" href="https://wa.me/917550924942?text=ইলিয়াস%20ক্লথ%20স্টোর্সের%20বিভিন্ন কাপড়%20সম্পর্কে%20জানতে%20চাই" target="_blank">💬 WhatsApp-এ জানতে চান</a></div>
+    </article></div>
 </section>
 
 <section id="about">
-  <h2>আমাদের সম্পর্কে</h2>
-  <div class="info">
-    <p>ইলিয়াস ক্লথ স্টোর্সে বিভিন্ন ধরনের পোশাক ও কাপড়ের কালেকশন পাওয়া যায়। আপনার পছন্দ ও প্রয়োজন অনুযায়ী পোশাক বেছে নিতে আমাদের দোকানে আসুন।</p>
-  </div>
+<h2>আমাদের সম্পর্কে</h2>
+<div class="info"><p>ইলিয়াস ক্লথ স্টোর্সে বিভিন্ন ধরনের পোশাক ও কাপড়ের কালেকশন পাওয়া যায়। আপনার পছন্দ ও প্রয়োজন অনুযায়ী পোশাক বেছে নিতে আমাদের দোকানে আসুন।</p></div>
 </section>
 
 <section id="contact">
-  <h2>যোগাযোগ করুন</h2>
-  <div class="info">
-    <p><strong>📍 ঠিকানা:</strong> ধানগাড়া বিষণপুর (সাকিম মোড়), চাঁচল, মালদা</p>
-    <p><strong>📞 মোবাইল:</strong> <a href="tel:7550924942">7550924942</a> / <a href="tel:9647639115">9647639115</a></p>
-    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/917550924942" target="_blank">7550924942</a> / <a href="https://wa.me/919647639115" target="_blank">9647639115</a></p>
-    <a class="btn call" href="tel:7550924942">📞 7550924942</a>
-    <a class="btn call" href="tel:9647639115">📞 9647639115</a>
-    <a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp 1</a>
-    <a class="btn wa" href="https://wa.me/919647639115" target="_blank">💬 WhatsApp 2</a>
-  </div>
+<h2>যোগাযোগ করুন</h2>
+<div class="info">
+<p><strong>📍 ঠিকানা:</strong> ধানগাড়া বিষণপুর (সাকিম মোড়), চাঁচল, মালদা</p>
+<p><strong>📞 মোবাইল:</strong> <a href="tel:7550924942">7550924942</a> / <a href="tel:9647639115">9647639115</a></p>
+<p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/917550924942" target="_blank">7550924942</a> / <a href="https://wa.me/919647639115" target="_blank">9647639115</a></p>
+<a class="btn call" href="tel:7550924942">📞 7550924942</a>
+<a class="btn call" href="tel:9647639115">📞 9647639115</a>
+<a class="btn wa" href="https://wa.me/917550924942" target="_blank">💬 WhatsApp 1</a>
+<a class="btn wa" href="https://wa.me/919647639115" target="_blank">💬 WhatsApp 2</a>
+</div>
 </section>
-
-<footer>
-  © 2026 ইলিয়াস ক্লথ স্টোর্স — সর্বস্বত্ব সংরক্ষিত
-</footer>
+<footer>© 2026 ইলিয়াস ক্লথ স্টোর্স — সর্বস্বত্ব সংরক্ষিত</footer>
 </body>
 </html>
